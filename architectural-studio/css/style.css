@@ -1,0 +1,876 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+@font-face {
+  font-family: "FuturaPT";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/fonts/FuturaPT-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPT Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/fonts/FuturaPT-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPT Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/fonts/FuturaPT-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "FuturaPT Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/fonts/FuturaPT-Light.woff") format("woff");
+}
+html body {
+  font-family: "FuturaPT";
+  color: white;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+._container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("../img/main/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 70px 0px 0px 0px;
+}
+.main .header .header__lang {
+  font-size: 24px;
+}
+.main .header .header__lang a {
+  color: white;
+}
+.main .main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main .main-content .main-content__logo {
+  margin-top: 71px;
+}
+.main .main-content .main-content__name {
+  margin-top: 8px;
+  font-family: "FuturaPT Bold";
+  font-size: 48px;
+  line-height: 129%;
+  padding: 85px 0px;
+  max-width: 821px;
+}
+.main .main-content .main-content__arrow {
+  margin: 168px 0px 48px;
+}
+
+.subtitle {
+  background-color: #131313;
+  font-weight: 450;
+  font-size: 24px;
+  padding: 23px 0px;
+}
+
+.subtitle span {
+  font-family: "FuturaPT Bold";
+  letter-spacing: 3px;
+}
+
+.about-content {
+  background: #202020;
+}
+.about-content .about-content__text {
+  margin-top: 116px;
+}
+.about-content .about-content__text .text__text {
+  margin-top: 100px;
+  font-family: "FuturaPT Regular";
+  font-size: 24px;
+  line-height: 100%;
+  max-width: 585px;
+  letter-spacing: 125%;
+}
+.about-content .about-content__text .text__text span {
+  font-family: "FuturaPT Bold";
+}
+.about-content .about-content__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 263px;
+  margin-bottom: 209px;
+  font-family: "FuturaPT Light";
+}
+.about-content .about-content__menu .menu__line {
+  margin: 13px 19px 0px 0px;
+}
+.about-content .about-content__menu .menu__item {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.about-content .about-content__menu .menu__item:last-child {
+  margin-bottom: 0px;
+}
+.about-content .about-content__menu .menu__item a {
+  color: white;
+}
+.about-content .about-content__menu .menu__item_bold {
+  font-family: "FuturaPT Bold";
+}
+.about-content .about-content__menu .menu__item:hover {
+  text-decoration: underline;
+}
+
+.about-content ._container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.portfolio .portfolio__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+}
+.portfolio .portfolio__gallery .gallery__text {
+  background-image: url("../img/portfolio/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 364px;
+  min-width: 25%;
+  min-height: 367px;
+  min-height: 100%;
+  font-family: "FuturaPT Bold";
+  font-size: 24px;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 155px;
+  line-height: 129%;
+}
+.portfolio .portfolio__gallery img {
+  min-width: 25%;
+}
+.portfolio .portfolio__button {
+  background-color: #202020;
+  text-align: center;
+}
+.portfolio .portfolio__button button {
+  background-color: #131313;
+  padding: 14px 119px;
+  margin: 58px 0px 48px;
+  font-family: "FuturaPT Bold";
+  font-size: 24px;
+  color: white;
+}
+.portfolio .portfolio__button button:hover {
+  background-color: #373737;
+  transition-duration: 0.5s;
+  color: #B5B5B5;
+}
+
+.services {
+  background-color: #202020;
+  padding-bottom: 60px;
+}
+.services .services-content a {
+  color: white;
+  font-family: "FuturaPT Regular";
+}
+.services .services-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.services .services-content .services-content__lists {
+  list-style: none;
+  padding-top: 176px;
+}
+.services .services-content .services-content__lists #lists li ul {
+  display: none;
+}
+.services .services-content .services-content__lists #lists li:hover ul, .services .services-content .services-content__lists #lists li.over ul {
+  display: block;
+}
+.services .services-content .services-content__lists #lists a {
+  display: block;
+}
+.services .services-content .services-content__lists #lists ul li {
+  list-style-type: none;
+}
+.services .services-content .services-content__lists #lists ul li ul li {
+  list-style-type: none;
+  list-style-position: inside;
+}
+.services .services-content .services-content__lists .list__arrow {
+  margin-right: 23px;
+  display: inline-block;
+}
+.services .services-content .services-content__lists .active {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.services .services-content .services-content__lists .list__design {
+  border: 3px solid #131313;
+  font-family: "FuturaPT Bold";
+  padding: 20px 0px 20px 90px;
+  width: 847px;
+  font-size: 24px;
+  line-height: 129%;
+  letter-spacing: 15.5%;
+}
+.services .services-content .services-content__lists .design__design-list {
+  background-color: #131313;
+  font-size: 24px;
+  padding: 23px 81px 31px 72px;
+  width: 737px;
+  margin-left: 110px;
+  margin-bottom: 50px;
+}
+.services .services-content .services-content__lists .lists__list li {
+  display: flex;
+  flex-direction: column;
+}
+.services .services-content .services-content__lists .list__arrow-2 {
+  margin-right: 23px;
+  display: inline-block;
+}
+.services .services-content .services-content__lists .active {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+.services .services-content .services-content__lists .list__renovation {
+  border: 3px solid #131313;
+  font-family: "FuturaPT Bold";
+  padding: 20px 0px 20px 90px;
+  width: 847px;
+  font-size: 24px;
+  line-height: 129%;
+  letter-spacing: 15.5%;
+  margin-top: 50px;
+}
+.services .services-content .services-content__lists .renovation__renovation-list {
+  background-color: #131313;
+  font-size: 24px;
+  padding: 23px 81px 31px 72px;
+  width: 737px;
+  margin-left: 110px;
+  margin-bottom: 100px;
+}
+.services .services-content .services-content__lists .design-list__item, .services .services-content .services-content__lists .renovation-list__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 3px solid #202020;
+  padding-bottom: 9px;
+  margin-bottom: 27px;
+}
+.services .services-content .services-content__lists .design-list__item:hover, .services .services-content .services-content__lists .renovation-list__item:hover {
+  text-decoration: underline;
+}
+.services .services-content .services-content__menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 263px;
+  margin-bottom: 209px;
+  font-family: "FuturaPT Light";
+}
+.services .services-content .services-content__menu .menu__line {
+  margin: 83px 19px 0px 0px;
+}
+.services .services-content .services-content__menu .menu__item {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.services .services-content .services-content__menu .menu__item:last-child {
+  margin-bottom: 0px;
+}
+.services .services-content .services-content__menu .menu__item a {
+  color: white;
+}
+.services .services-content .services-content__menu .menu__item_bold {
+  font-family: "FuturaPT Bold";
+}
+.services .services-content .services-content__menu .menu__item_bold a {
+  font-family: "FuturaPT Bold";
+}
+.services .services-content .services-content__menu .menu__item:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  background-color: #202020;
+}
+.contact .contact-content {
+  margin-top: 85px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+.contact .contact-content .contact-content__info {
+  margin-bottom: 85px;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-content .contact-content__info .info__contacts {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 47px;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__studio {
+  font-size: 24px;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__studio div {
+  background-color: #131313;
+  font-family: "FuturaPT Regular";
+  min-height: 52px;
+  width: 392px;
+  margin-bottom: 29px;
+  padding-top: 11px;
+  padding-left: 80px;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__studio div:last-child {
+  margin-bottom: 0px;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__studio img {
+  margin-left: -50px;
+  margin-right: 30px;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__user {
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-content .contact-content__info .info__contacts .contacts__user input {
+  margin-bottom: 29px;
+  min-height: 52px;
+  width: 392px;
+  color: #202020;
+  padding: 10px 0px 11px 17px;
+  font-family: "FuturaPT Light";
+  font-size: 24px;
+}
+.contact .contact-content .contact-content__info .info__contacts .user__button {
+  background-color: #55B055;
+  font-family: "FuturaPT Bold";
+  color: white;
+  font-size: 24px;
+  min-height: 52px;
+  max-width: 392px;
+  min-width: 100%;
+}
+.contact .contact-content .contact-content__info .info__contacts .user__button:hover {
+  background-color: #2d642d;
+  color: #fff;
+  transition-duration: 0.5s;
+}
+.contact .contact-content .contact-content__menu {
+  justify-content: space-between;
+  font-family: "FuturaPT Light";
+  margin-top: 263px;
+  margin-bottom: 209px;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.contact .contact-content .contact-content__menu .menu__line {
+  margin: 120px 19px 0px 0px;
+  position: absolute;
+  bottom: 95 px;
+  right: 115px;
+}
+.contact .contact-content .contact-content__menu .menu__item {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+.contact .contact-content .contact-content__menu .menu__item:last-child {
+  margin-bottom: 0px;
+}
+.contact .contact-content .contact-content__menu .menu__item a {
+  color: white;
+}
+.contact .contact-content .contact-content__menu .menu__item_bold {
+  font-family: "FuturaPT Bold";
+}
+.contact .contact-content .contact-content__menu .menu__item_bold a {
+  font-family: "FuturaPT Bold";
+}
+.contact .contact-content .contact-content__menu .menu__item:hover {
+  text-decoration: underline;
+}
+
+.news {
+  background-color: #202020;
+}
+.news .news__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 85px;
+  padding-bottom: 85px;
+}
+.news .news__content .news__news {
+  display: flex;
+  flex-direction: row;
+  width: 82%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.news .news__content .news__news .news__element {
+  width: 284px;
+  margin-right: 42px;
+  text-align: center;
+}
+.news .news__content .news__news .news__element .news__title {
+  margin-top: 40px;
+  font-family: "FuturaPT Bold";
+  font-size: 24px;
+  min-height: 62px;
+}
+.news .news__content .news__news .news__element .news__text {
+  font-family: "FuturaPT Light";
+  font-size: 24px;
+  color: #CECECE;
+  line-height: 100%;
+  margin-top: 25px;
+}
+.news .news__content .news__news .news__element .news__button {
+  margin-top: 25px;
+  background-color: #131313;
+  color: white;
+  font-family: "FuturaPT Bold";
+  height: 50px;
+  width: 100%;
+  font-size: 24px;
+}
+.news .news__content .news__news .news__element .news__button:hover {
+  background-color: #373737;
+  transition-duration: 0.5s;
+  color: #B5B5B5;
+}
+.news .news__content .news__news .news__element:last-child {
+  margin-right: 0px;
+}
+.news .news__content .news__arrow {
+  margin-top: 175px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #131313;
+}
+.footer .footer__footer .footer__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 65px;
+  font-family: "FuturaPT Light";
+  font-size: 18px;
+}
+.footer .footer__footer .footer__info .footer-menu__element {
+  margin-bottom: 16px;
+}
+.footer .footer__footer .footer__info .footer-menu__element a {
+  color: white;
+}
+.footer .footer__footer .footer__info .footer-menu__element:last-child {
+  margin-bottom: 0px;
+}
+.footer .footer__footer .footer__info .footer-menu__element:hover {
+  text-decoration: underline;
+}
+.footer .footer__footer .footer__info .footer-contacts__element {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+.footer .footer__footer .footer__info .footer-contacts__element:last-child {
+  margin-bottom: 0;
+}
+.footer .footer__footer .footer__info .footer-contacts__element:hover {
+  text-decoration: underline;
+}
+.footer .footer__footer .footer-menu__element_gray a {
+  color: #B5B5B5 !important;
+}
+.footer .footer__footer .footer__rights {
+  margin-top: 55px;
+  text-align: center;
+  color: #5E5E5E;
+  padding-bottom: 59px;
+}
+
+.main__news-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("../img/news-page/news-page-header/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.main__news-page .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 70px 0px 0px 0px;
+}
+.main__news-page .header .header__logo {
+  margin-left: 100px;
+}
+.main__news-page .header .header__lang {
+  font-size: 24px;
+}
+.main__news-page .header .header__lang a {
+  color: white;
+}
+.main__news-page .main-content-news-page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.main__news-page .main-content-news-page .main-content__news-page-name {
+  margin-top: 205px;
+  font-size: 48px;
+  font-family: "FuturaPT Bold";
+}
+.main__news-page .main-content-news-page .main-content__news-page-text {
+  font-size: 24px;
+  margin-top: 51px;
+  margin-bottom: 336px;
+}
+
+.content__news-page {
+  background-color: #202020;
+}
+.content__news-page .content-news-page {
+  display: flex;
+  flex-direction: column;
+}
+.content__news-page .content-news-page .content__inform {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 147px;
+}
+.content__news-page .content-news-page .content__inform .inform__image img {
+  max-width: 555px;
+  margin-bottom: 98px;
+}
+.content__news-page .content-news-page .content__inform .inform__text p {
+  max-width: 555px;
+  font-family: "FuturaPT Regular";
+  font-size: 24px;
+  line-height: 100%;
+  margin-bottom: 50px;
+}
+.content__news-page .content-news-page .content__inform .inform__text p:last-child {
+  margin-bottom: 0;
+}
+.content__news-page .content-news-page .content__photos {
+  margin-top: 49px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.content__news-page .content-news-page .content__photos .photos__left-arrow {
+  position: absolute;
+  top: 250px;
+  left: 0px;
+}
+.content__news-page .content-news-page .content__photos .photos__right-arrow {
+  position: absolute;
+  bottom: 250px;
+  right: -1px;
+}
+.content__news-page .content-news-page .content__photos .photos__left-arrow, .content__news-page .content-news-page .content__photos .photos__right-arrow {
+  padding: 18px 20px;
+  background-color: #000;
+  opacity: 70%;
+  cursor: pointer;
+}
+.content__news-page .content-news-page .content__photos .photos__photos {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.main__portfolio-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #202020;
+}
+.main__portfolio-page .header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  padding: 70px 0px 0px 0px;
+}
+.main__portfolio-page .header .header__logo {
+  margin-left: 100px;
+}
+.main__portfolio-page .header .header__lang {
+  font-size: 24px;
+}
+.main__portfolio-page .header .header__lang a {
+  color: white;
+}
+.main__portfolio-page .main-content__portfolio-page-name {
+  margin-top: 131px;
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "FuturaPT Bold";
+  margin-bottom: 102px;
+  letter-spacing: 7.44px;
+}
+
+.portfolio__portfolio-page-subtitle {
+  min-height: 93px;
+}
+
+@media screen and (max-width: 1460px) {
+  .portfolio__gallery {
+    justify-content: center;
+    align-items: center;
+    background-color: #202020;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header ._container {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .subtitle ._container {
+    margin-left: 10px;
+  }
+  .about-content ._container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .services-content {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .services-content .list__design, .services-content .list__renovation {
+    max-width: 800px;
+  }
+  .services-content .design__design-list, .services-content .renovation__renovation-list {
+    max-width: 690px;
+  }
+  .news__arrow_left {
+    margin-left: 10px;
+  }
+  .news__arrow_right {
+    margin-right: 10px;
+  }
+  .menu {
+    font-size: 20px;
+  }
+  .footer__footer {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .content__inform {
+    margin-top: 40px !important;
+    justify-content: center !important;
+  }
+  .content__inform .inform__image img {
+    margin-bottom: 20px !important;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .content__inform .inform__text p {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .contact-content__info {
+    margin: 0px auto;
+  }
+  .menu {
+    display: none;
+  }
+  .menu .menu__line {
+    display: none;
+  }
+}
+@media screen and (max-width: 870px) {
+  .services-content .list__design, .services-content .list__renovation {
+    max-width: 600px;
+  }
+  .services-content .design__design-list, .services-content .renovation__renovation-list {
+    max-width: 490px;
+  }
+  .contact-content {
+    display: none;
+  }
+  .contact-content .contact-content__info {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .contact-content .contact-content__info .contacts__studio {
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
+  .contact-content .contact-content__info .info__map img {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .services-content .list__design, .services-content .list__renovation {
+    max-width: 390px;
+    padding-left: 20px !important;
+  }
+  .services-content .design__design-list, .services-content .renovation__renovation-list {
+    max-width: 250px;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    margin-left: 0 !important;
+  }
+  .services-content .design-list__item div {
+    font-size: 18px;
+  }
+  .services-content .renovation-list__item div {
+    font-size: 18px;
+  }
+  .services-content .renovation-list__item div {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main__news-page .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__news-page .header .header__logo {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .main__news-page .header .header__lang {
+    margin-top: 40px;
+  }
+  .main__portfolio-page .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .main__portfolio-page .header .header__logo {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  .main__portfolio-page .header .header__lang {
+    margin-top: 40px;
+  }
+  .footer__info {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .footer__info .footer__logo, .footer__info .footer__menu, .footer__info .footer__contacts {
+    margin-bottom: 40px;
+    margin-right: 20px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .text__text {
+    padding-bottom: 30px;
+  }
+  .services-content .list__design, .services-content .list__renovation {
+    max-width: 250px;
+  }
+  .studio__address, .studio__number, .studio__mail, .user__name, .user__number, .user__button {
+    font-size: 20px;
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 315px) {
+  .studio__address, .studio__number, .studio__mail, .user__name, .user__number, .user__button {
+    font-size: 18px;
+    max-width: 250px;
+  }
+}
